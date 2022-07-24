@@ -56,11 +56,7 @@ async function atualizarDados(putData) {
             method: "PUT",
             headers: {
                 "Authorization":"Basic " + sessionStorage.getItem('authorization'),
-                "Content-type":"application/json;charset=UTF-8",
-                "Access-Control-Allow-Origin":"*",
-                "Access-Control-Allow-Methods":"DELETE, POST, GET, OPTIONS",
-                "Access-Control-Allow-Methods":"DELETE, POST, GET, OPTIONS, PUT",
-                "Access-Control-Allow-Headers":"Content-Type, Authorization, X-Requested-With"
+                "Content-type":"application/json;charset=UTF-8"
             },
             body: putData
           });
