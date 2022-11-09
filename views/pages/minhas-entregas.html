@@ -80,8 +80,7 @@
             let res = await fetch(url, {
                 headers: {
                     "Authorization":"Basic " + sessionStorage.getItem('authorization'),
-                    "Content-type":"application/json;charset=UTF-8",
-                    "Access-Control-Allow-Origin":"*"
+                    "Content-type":"application/json;charset=UTF-8"
                 }
             });
             return await res.json();
